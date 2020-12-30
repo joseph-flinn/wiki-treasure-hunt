@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/wiki-treasure-hunt/static/css/main.ab7136cd.chunk.css",
+    "main.js": "/wiki-treasure-hunt/static/js/main.814e2729.chunk.js",
+    "main.js.map": "/wiki-treasure-hunt/static/js/main.814e2729.chunk.js.map",
+    "runtime-main.js": "/wiki-treasure-hunt/static/js/runtime-main.f6fe305d.js",
+    "runtime-main.js.map": "/wiki-treasure-hunt/static/js/runtime-main.f6fe305d.js.map",
+    "static/js/2.cfab8ba1.chunk.js": "/wiki-treasure-hunt/static/js/2.cfab8ba1.chunk.js",
+    "static/js/2.cfab8ba1.chunk.js.map": "/wiki-treasure-hunt/static/js/2.cfab8ba1.chunk.js.map",
+    "static/js/3.dc4bbff3.chunk.js": "/wiki-treasure-hunt/static/js/3.dc4bbff3.chunk.js",
+    "static/js/3.dc4bbff3.chunk.js.map": "/wiki-treasure-hunt/static/js/3.dc4bbff3.chunk.js.map",
+    "index.html": "/wiki-treasure-hunt/index.html",
+    "static/css/main.ab7136cd.chunk.css.map": "/wiki-treasure-hunt/static/css/main.ab7136cd.chunk.css.map",
+    "static/js/2.cfab8ba1.chunk.js.LICENSE.txt": "/wiki-treasure-hunt/static/js/2.cfab8ba1.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/wiki-treasure-hunt/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f6fe305d.js",
+    "static/js/2.cfab8ba1.chunk.js",
+    "static/css/main.ab7136cd.chunk.css",
+    "static/js/main.814e2729.chunk.js"
+  ]
+}
