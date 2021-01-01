@@ -11,25 +11,19 @@ import {
   Switch,
   Route
 } from 'react-router-dom'
-import { HomePage } from 'pages/HomePage'
-import { Navbar } from 'components/Navbar'
+import { NavBar } from 'components/NavBar'
+import { routesList } from 'routes'
 
-const routes = [
-  {
-    'component': HomePage,
-    'path': '/'
-  }
-]
 
 export const App = () => {
   return (
     <ChakraProvider theme={theme}>
       <Router>
-        <Flex direction="column">
-          <Navbar/>
+        <Flex height="100vh" direction="column">
+          <NavBar />
           <Switch>
             {
-              routes.map(route => (
+              routesList.map(route => (
                 <Route path={route.path} component={route.component} />
               ))
             }
