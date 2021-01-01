@@ -9,24 +9,20 @@ import {
   Grid,
   theme,
 } from '@chakra-ui/react';
-import { ColorModeSwitcher } from './ColorModeSwitcher';
-import { Logo } from './Logo';
+import { HomePage } from 'pages/homepage'
+import { ColorModeSwitcher } from 'components/ColorModeSwitcher';
 
-function App() {
+export const App = () => {
   return (
     <ChakraProvider theme={theme}>
       <Box textAlign="center" fontSize="xl">
         <Grid minH="100vh" p={3}>
           <ColorModeSwitcher justifySelf="flex-end" />
           <VStack spacing={8}>
-            <Text>
-              Wikipedia Treasure Hunts Coming Soon...
-            </Text>
+            <HomePage/>
           </VStack>
         </Grid>
       </Box>
     </ChakraProvider>
   );
-}
-
-export default App;
+};
