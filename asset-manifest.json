@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.js": "/wiki-treasure-hunt/static/js/main.0bbcf696.chunk.js",
-    "main.js.map": "/wiki-treasure-hunt/static/js/main.0bbcf696.chunk.js.map",
-    "runtime-main.js": "/wiki-treasure-hunt/static/js/runtime-main.2f3d1126.js",
-    "runtime-main.js.map": "/wiki-treasure-hunt/static/js/runtime-main.2f3d1126.js.map",
-    "static/js/2.e09d6cc9.chunk.js": "/wiki-treasure-hunt/static/js/2.e09d6cc9.chunk.js",
-    "static/js/2.e09d6cc9.chunk.js.map": "/wiki-treasure-hunt/static/js/2.e09d6cc9.chunk.js.map",
-    "static/js/3.4d85c372.chunk.js": "/wiki-treasure-hunt/static/js/3.4d85c372.chunk.js",
-    "static/js/3.4d85c372.chunk.js.map": "/wiki-treasure-hunt/static/js/3.4d85c372.chunk.js.map",
+    "main.js": "/wiki-treasure-hunt/static/js/main.333c7703.chunk.js",
+    "main.js.map": "/wiki-treasure-hunt/static/js/main.333c7703.chunk.js.map",
+    "runtime-main.js": "/wiki-treasure-hunt/static/js/runtime-main.d1d1c76b.js",
+    "runtime-main.js.map": "/wiki-treasure-hunt/static/js/runtime-main.d1d1c76b.js.map",
+    "static/js/2.3df109d3.chunk.js": "/wiki-treasure-hunt/static/js/2.3df109d3.chunk.js",
+    "static/js/2.3df109d3.chunk.js.map": "/wiki-treasure-hunt/static/js/2.3df109d3.chunk.js.map",
+    "static/js/3.f220838f.chunk.js": "/wiki-treasure-hunt/static/js/3.f220838f.chunk.js",
+    "static/js/3.f220838f.chunk.js.map": "/wiki-treasure-hunt/static/js/3.f220838f.chunk.js.map",
     "index.html": "/wiki-treasure-hunt/index.html",
-    "static/js/2.e09d6cc9.chunk.js.LICENSE.txt": "/wiki-treasure-hunt/static/js/2.e09d6cc9.chunk.js.LICENSE.txt",
-    "static/media/logo.034ef726.svg": "/wiki-treasure-hunt/static/media/logo.034ef726.svg"
+    "static/js/2.3df109d3.chunk.js.LICENSE.txt": "/wiki-treasure-hunt/static/js/2.3df109d3.chunk.js.LICENSE.txt",
+    "static/media/background.a281c325.mp4": "/wiki-treasure-hunt/static/media/background.a281c325.mp4"
   },
   "entrypoints": [
-    "static/js/runtime-main.2f3d1126.js",
-    "static/js/2.e09d6cc9.chunk.js",
-    "static/js/main.0bbcf696.chunk.js"
+    "static/js/runtime-main.d1d1c76b.js",
+    "static/js/2.3df109d3.chunk.js",
+    "static/js/main.333c7703.chunk.js"
   ]
 }
