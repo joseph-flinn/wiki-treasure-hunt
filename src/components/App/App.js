@@ -4,6 +4,7 @@ import {
   Flex,
   Box,
   Grid,
+  extendTheme,
   theme,
 } from '@chakra-ui/react';
 import {
@@ -12,23 +13,48 @@ import {
   Route
 } from 'react-router-dom'
 import { NavBar } from 'components/NavBar'
+import { BackgroundVideo } from 'components/BackgroundVideo'
 import { routesList } from 'routes'
 
 
+const pageFactory = route => {
+  return (
+    <>
+      { route.name == "home" ? <BackgroundVideo /> : '' }
+      <Flex
+        height="100vh" 
+        direction="column"
+        background="rgba(0, 0, 0, 0.2)"
+      >
+        <NavBar />
+        <Route path={route.path} component={route.component} />
+      </Flex>
+    </>
+  )
+}
+
+
+const myTheme = extendTheme({
+  styles: {
+    global: {
+      "img, video": {
+        maxWidth: "none",
+      }
+    }
+  }
+})
+
 export const App = () => {
   return (
-    <ChakraProvider theme={theme}>
+    <ChakraProvider theme={myTheme}>
       <Router>
-        <Flex height="100vh" direction="column">
-          <NavBar />
-          <Switch>
-            {
-              routesList.map(route => (
-                <Route path={route.path} component={route.component} />
-              ))
-            }
-          </Switch>
-        </Flex>
+        <Switch>
+          {
+            routesList.map(route => (
+              pageFactory(route)
+            ))
+          }
+        </Switch>
       </Router>
     </ChakraProvider>
   );
