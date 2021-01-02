@@ -4,8 +4,9 @@ import {
   Flex,
   Box,
   Grid,
+  DarkMode,
   extendTheme,
-  theme,
+  theme
 } from '@chakra-ui/react';
 import {
   BrowserRouter as Router,
@@ -18,18 +19,32 @@ import { routesList } from 'routes'
 
 
 const pageFactory = route => {
+  if ( route.name == "home" ) {
+    return (
+      <>
+        <BackgroundVideo />
+        <Flex
+          height="100vh" 
+          direction="column"
+          background="rgba(0, 0, 0, 0.2)"
+        >
+          <DarkMode>
+            <NavBar />
+            <Route path={route.path} component={route.component} />
+          </DarkMode>
+        </Flex>
+      </>
+    )
+  }
+
   return (
-    <>
-      { route.name == "home" ? <BackgroundVideo /> : '' }
-      <Flex
-        height="100vh" 
-        direction="column"
-        background="rgba(0, 0, 0, 0.2)"
-      >
-        <NavBar />
-        <Route path={route.path} component={route.component} />
-      </Flex>
-    </>
+    <Flex
+      height="100vh" 
+      direction="column"
+    >
+      <NavBar />
+      <Route path={route.path} component={route.component} />
+    </Flex>
   )
 }
 
