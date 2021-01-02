@@ -5,6 +5,7 @@ import {
   Box,
   Grid,
   DarkMode,
+  LightMode,
   extendTheme,
   theme
 } from '@chakra-ui/react';
@@ -28,10 +29,8 @@ const pageFactory = route => {
           direction="column"
           background="rgba(0, 0, 0, 0.2)"
         >
-          <DarkMode>
-            <NavBar />
-            <Route path={route.path} component={route.component} />
-          </DarkMode>
+          <NavBar />
+          <Route path={route.path} component={route.component} />
         </Flex>
       </>
     )
@@ -50,13 +49,14 @@ const pageFactory = route => {
 
 
 const myTheme = extendTheme({
+  useSystemColorMode: false,
   styles: {
     global: {
       "img, video": {
         maxWidth: "none",
       }
     }
-  }
+  },
 })
 
 export const App = () => {

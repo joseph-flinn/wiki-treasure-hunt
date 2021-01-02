@@ -21,10 +21,10 @@ export const HomePage = props  => {
       direction="column"
       flexGrow="1"
     >
-      <Text>
+      <Text color="white">
         Are you ready for an adventure?
       </Text>
-      <Button mt='10' onClick={() => alert('Hunt alert')}>
+      <Button color="white" variant="outline" mt="10" onClick={() => alert('Hunt alert')}>
         Load Hunt
       </Button>
     </Flex>

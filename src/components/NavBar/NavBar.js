@@ -7,7 +7,6 @@ import {
 } from '@chakra-ui/react';
 import { HamburgerIcon } from '@chakra-ui/icons'
 
-import { ColorModeSwitcher } from 'components/ColorModeSwitcher';
 import { NavMenu } from 'components/NavMenu'
 
 
@@ -21,12 +20,11 @@ export const NavBar = () => {
           aria-label="Menu Button" 
           variant="ghost"
           fontSize="lg"
-          color="current"
+          color="white"
           icon={<HamburgerIcon/>}
           onClick={onOpen}
         />
         <Spacer />
-        <ColorModeSwitcher justify-self="flex-end" />
       </Flex>
       <NavMenu onClose={onClose} isOpen={isOpen}/> 
     </>
