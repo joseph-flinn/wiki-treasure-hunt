@@ -15,36 +15,26 @@ import {
   Route
 } from 'react-router-dom'
 import { NavBar } from 'components/NavBar'
-import { BackgroundVideo } from 'components/BackgroundVideo'
 import { routesList } from 'routes'
 
 
 const pageFactory = route => {
-  if ( route.name == "home" ) {
-    return (
-      <>
-        <BackgroundVideo />
-        <Flex
-          height="100vh" 
-          direction="column"
-          background="rgba(0, 0, 0, 0.2)"
-        >
-          <NavBar />
-          <Route path={route.path} component={route.component} />
-        </Flex>
-      </>
-    )
-  }
-
   return (
-    <Flex
-      height="100vh" 
-      direction="column"
-    >
-      <NavBar />
-      <Route path={route.path} component={route.component} />
-    </Flex>
+    <>
+      <Flex
+        height="100vh" 
+        direction="column"
+      >
+        <NavBar />
+        <Route 
+          exact={route.name === "home" ? true : false}
+          path={route.path} 
+          component={route.component} 
+        />
+      </Flex>
+    </>
   )
+
 }
 
 
@@ -65,9 +55,10 @@ export const App = () => {
       <Router>
         <Switch>
           {
-            routesList.map(route => (
-              pageFactory(route)
-            ))
+            routesList.map(route => {
+              console.log(JSON.stringify(route, null, 4))
+              return pageFactory(route)
+            })
           }
         </Switch>
       </Router>

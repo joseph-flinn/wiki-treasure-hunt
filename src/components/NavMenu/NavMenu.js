@@ -16,7 +16,7 @@ import {
   Button,
   Text
 } from '@chakra-ui/react';
-import { routes } from 'routes';
+import { routes, routesList } from 'routes';
 
 
 export const NavMenu = props => {
@@ -41,24 +41,20 @@ export const NavMenu = props => {
           </DrawerHeader>
           <DrawerBody>
             <Flex direction="column">
-              <Link 
-                to={routes.home.path}
-                onClick={onClose}
-              >
-                Page 1
-              </Link>
-              <Link 
-                to={routes.home.path}
-                onClick={onClose}
-              >
-                Page 2
-              </Link>
-              <Link 
-                to={routes.home.path}
-                onClick={onClose}
-              >
-                Page 3
-              </Link>
+              {
+                routesList.filter(route => route.name !== 'home')
+                  .map(route => (
+                    <Link 
+                      to={route.path}
+                      onClick={onClose}
+                    >
+                      <Text fontSize="xl">
+                        {route.displayName}
+                      </Text>
+                    </Link>
+
+                  ))
+              }
             </Flex>
           </DrawerBody>
         </DrawerContent>

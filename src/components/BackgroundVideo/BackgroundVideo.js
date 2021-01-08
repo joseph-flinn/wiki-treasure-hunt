@@ -15,7 +15,7 @@ export const BackgroundVideo = props => {
   return (
     <Box
       position="absolute"
-      zIndex="-1"
+      zIndex="-5"
       height="full"
       width="full"
       overflow="hidden"
@@ -25,9 +25,9 @@ export const BackgroundVideo = props => {
         top="50%"
         left="50%"
         transform="translate(-50%, -50%)"
-
         autoPlay="autoPlay" 
         loop="loop" 
+        filter="brightness(.5)"
         muted 
       >
         <source src={videoSource} type="video/mp4"/>
