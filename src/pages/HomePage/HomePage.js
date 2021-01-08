@@ -7,10 +7,13 @@ import {
   Spacer
 } from '@chakra-ui/react';
 import { BackgroundVideo } from 'components/BackgroundVideo'
+import { useHistory } from 'react-router-dom'
+import { routes } from 'routes'
 
 
 export const HomePage = props  => {
   const { ...other } = props; 
+  let history = useHistory();
 
   return (
     <>
@@ -27,7 +30,14 @@ export const HomePage = props  => {
         <Text color="white">
           Are you ready for an adventure?
         </Text>
-        <Button color="white" variant="outline" mt="10" onClick={() => alert('Hunt alert')}>
+        <Button 
+          color="white" 
+          variant="outline" 
+          mt="10" 
+          onClick={
+            () => history.push(routes.hunts.path)
+          }
+        >
           Load Hunt
         </Button>
       </Flex>
