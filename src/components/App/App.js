@@ -18,26 +18,6 @@ import { NavBar } from 'components/NavBar'
 import { routesList } from 'routes'
 
 
-const pageFactory = route => {
-  return (
-    <>
-      <Flex
-        height="100vh" 
-        direction="column"
-      >
-        <NavBar />
-        <Route 
-          exact={route.name === "home" ? true : false}
-          path={route.path} 
-          component={route.component} 
-        />
-      </Flex>
-    </>
-  )
-
-}
-
-
 const myTheme = extendTheme({
   useSystemColorMode: false,
   styles: {
@@ -53,14 +33,23 @@ export const App = () => {
   return (
     <ChakraProvider theme={myTheme}>
       <Router>
-        <Switch>
-          {
-            routesList.map(route => {
-              console.log(JSON.stringify(route, null, 4))
-              return pageFactory(route)
-            })
-          }
-        </Switch>
+        <Flex
+          height="100vh" 
+          direction="column"
+        >
+          <NavBar />
+          <Switch>
+            {
+              routesList.map(route => (
+                <Route 
+                  exact={route.name === "home" ? true : false }
+                  path={route.path} 
+                  component={route.component} 
+                />
+              ))
+            }
+          </Switch>
+        </Flex>
       </Router>
     </ChakraProvider>
   );
