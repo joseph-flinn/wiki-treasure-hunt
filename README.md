@@ -57,6 +57,7 @@ implementation. Please see [Contributing](CONTRIBUTING.md) for how to add one to
 Ongoing and planned work can be found on our 
 [Projects](https://github.com/joseph-flinn/wiki-treasure-hunt/projects/1) board.
 
+
 ## License
 This software is provided under the MIT license and is provided "as is". Please use the software
 responsibly and keep the universe in balance `#notalawyer`
