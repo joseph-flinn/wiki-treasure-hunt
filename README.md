@@ -26,12 +26,16 @@ to the code.
 
 
 ## Custom `npm` scripts
+I got tired of creating nested directories and the same file for a new and empty React component
+every time I needed a new one. I have written a couple of scripts to make this process less 
+tedious. To understand what is happening, take a look at the `"scripts"` section of the `package.json`
+file and the `scripts/` directory in the project.
 
-### `npm run add:component`
+### `npm run add:component <ComponentName>`
 Adds the component file structure that all components follow and adds the component to the 
 `src/commponents` directory.
 
-### `npm run add:page`
+### `npm run add:page <PageName>`
 Adds the component file structure that all pages follow and adds the page component to the
 `src/pages` directory.
 
