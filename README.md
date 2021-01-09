@@ -1,68 +1,63 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Wikipedia Treasure Hunt
 
-## Available Scripts
+The React project uses the [Chakra-UI](is://chakra-ui.com/) component library. Documentation
+on it can be found [here](https://chakra-ui.com/docs/getting-started). 
 
-In the project directory, you can run:
+[Wikipedia Treasure Hunt](https://joseph-flinn.github.io/wiki-treasure-hunt/) is currently 
+being hosted on GitHub Pages
+
+
+## Dependencies
+- npm 6.14+
+- node 
+
+
+## Setup
+Whenever using `npm`, I would highly suggest using [nvm](https://github.com/nvm-sh/nvm) to 
+manage the currently used version of `node`. This allows for clean maintainance for different
+node projects on the same computer.
+
+### `npm install`
+Installs the node dependencies that are needed to run the project.
 
 ### `npm start`
+Starts a React server and opens a tab in your brower that hot loads changes to 
+to the code.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Custom `npm` scripts
+I got tired of creating nested directories and the same file for a new and empty React component
+every time I needed a new one. I have written a couple of scripts to make this process less 
+tedious. To understand what is happening, take a look at the `"scripts"` section of the `package.json`
+file and the `scripts/` directory in the project.
 
-### `npm test`
+### `npm run add:component <ComponentName>`
+Adds the component file structure that all components follow and adds the component to the 
+`src/commponents` directory.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### `npm run add:page <PageName>`
+Adds the component file structure that all pages follow and adds the page component to the
+`src/pages` directory.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Contributing
+Contributions are welcome! Please read the [Code of Conduct](CODE_OF_CONDUCT.md) before contributing 
+and see [Contributing](CONTRIBUTING.md) for a guide on the different ways to contribute and expectaions
+on how to do so.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+Issues with the code or hunts can be submitted with GitHub Issues 
+[here](https://github.com/joseph-flinn/wiki-treasure-hunt/issues). Feature Requests may be submitted
+by creating an Issue; however, the maintainers may ask the author to create an ADR following the 
+ADR creation guidelines outlined in [Contributing](CONTRIBUTING.md).
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+This project uses [ADRs](docs/README.md) to track desgin decisions across the distributed work
+environment, especially useful in cases with a lot of time between design and 
+implementation. Please see [Contributing](CONTRIBUTING.md) for how to add one to the project.
 
-### `npm run eject`
+Ongoing and planned work can be found on our 
+[Projects](https://github.com/joseph-flinn/wiki-treasure-hunt/projects/1) board.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+## License
+This software is provided under the MIT license and is provided "as is". Please use the software
+responsibly and keep the universe in balance `#notalawyer`
