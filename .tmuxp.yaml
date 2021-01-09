@@ -1,0 +1,14 @@
+session_name: 'oth'
+start_directory: ${PWD}
+windows:
+- layout: f524,118x58,0,0[118x44,0,0,0,118x13,0,45,1]
+  focus: 'true'
+  panes:
+  - focus: 'true'
+  - 
+  window_name: work
+- layout: d0bf,118x58,0,0,2
+  panes:
+  - focus: 'true'
+    shell_command: npm start
+  window_name: npm
