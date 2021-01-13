@@ -5,9 +5,11 @@ import {
   Spacer
 } from '@chakra-ui/react';
 
+import { HuntDifficulty } from 'components/HuntDifficulty'
+
 
 export const HuntCard = props => {
-  const { hunt, ...others } = props;
+  const { hunt, onClick, ...others } = props;
 
   return (
     <Box 
@@ -16,11 +18,17 @@ export const HuntCard = props => {
       bg="gray.300"
       color="black"
       borderRadius="lg"
+      justifySelf="center"
+      _hover={{
+        "transform": "scale(1.05)"
+      }}
+      onClick={onClick}
     >
       <Box p={4} h="full" d="flex" flexDirection="column">
         <Text fontSize="xl">{ hunt.name }</Text>
-        <Spacer />
         <Text p={3}>{ hunt.story }</Text>
+        <Spacer />
+        <HuntDifficulty rank={ hunt.rank } />
       </Box>
     </Box>
   );
