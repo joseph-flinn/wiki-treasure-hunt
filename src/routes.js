@@ -1,6 +1,7 @@
 import { HomePage } from 'pages/HomePage'
 import { HowToPlay } from 'pages/HowToPlay'
 import { Hunts } from 'pages/Hunts'
+import { Hunt } from 'pages/Hunt'
 
 export const routes = {
   'home': {
@@ -12,6 +13,11 @@ export const routes = {
     'component': Hunts,
     'path': '/wiki-treasure-hunt/hunts',
     'displayName': 'Hunts'
+  },
+  'hunt': {
+    'component': Hunt,
+    'path': '/wiki-treasure-hunt/hunt',
+    'displayName': 'Hunt'
   },
   'howToPlay': {
     'component': HowToPlay,
