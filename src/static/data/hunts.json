@@ -3,24 +3,28 @@
     "name": "The Jade Dragon",
     "story": "In the late 14th century, the great Jade Dragon of the Ming Dynasty vanished. Many sea voyages had been taken during the time",
     "rank": 3,
-    "id": "the-jade-dragon"
+    "id": "the-jade-dragon",
+    "clues": []
   },
   {
     "name": "The Jade Dagger",
     "story": "The great Chinese General of the 3rd Ming Dynasty lost his dagger at sea trying to recover the lost Jade Dragon.",
     "rank": 5,
-    "id": "the-jade-dagger"
+    "id": "the-jade-dagger",
+    "clues": []
   },
   {
     "name": "Title 1",
     "story": "This is where the story goes",
     "rank": 0,
-    "id": "title-1"
+    "id": "title-1",
+    "clues": []
   },
   {
     "name": "Title 2",
     "story": "This is where the story goes",
     "rank": 4,
-    "id": "title-2"
+    "id": "title-2",
+    "clues": []
   }
 ]
